@@ -4,6 +4,9 @@
 #include <list>
 #include <memory>
 #include "City.h"
+#include "specialCity.h"
+#include "dangerousCity.h"
+#include "Metropolis.h"
 
 class Map {
 private:
@@ -13,7 +16,10 @@ private:
 public:
     void add_city(std::shared_ptr<City> city);
     void add_road(int origin_id, int destination_id, int cost);
+    std::shared_ptr<City> getCity(int id) const;
+    const std::list<std::pair<int, int>>& getNeighbors(int cityId) const;
     void printMap() const;
+    void printCityDetails() const;
 };
 
 #endif
