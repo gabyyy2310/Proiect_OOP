@@ -21,6 +21,10 @@ public:
 
     std::string getName() const;
     int getId() const;
+
+    const std::vector<Item>& getItemsToSell() const { return item_to_sell; }
+    const std::vector<Item>& getItemsDemanded() const { return item_demanded; }
+
 };
 
 #endif
