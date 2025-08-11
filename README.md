@@ -17,7 +17,7 @@ The project demonstrates advanced object-oriented programming principles, includ
 
 ---
 
-## Design Patterns Used
+## Advanced OOP Techniques Used
 - **Factory Pattern** – generates different types of cities dynamically.
 - **Strategy Pattern** – switches between different challenge-solving or trading strategies.
 - **Abstract Classes** – defines common interfaces for cities, challenges, and items.
